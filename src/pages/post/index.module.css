@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.main {
+  flex: 3;
+}
+
+.aside {
+  flex: 1;
+}
+
+/* Post */
+.postFull {
+  background: white;
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.votes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.votes button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Post Content */
+.postContent h1 {
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.fullText {
+  margin-bottom: 0.5rem;
+}
+
+.postActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.postActions span {
+  font-size: 0.9rem;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebarBox {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.sidebarBox h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Comments Section */
+.comments {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.commentInput textarea {
+  width: 100%;
+  height: 80px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.commentInput button {
+  padding: 0.5rem 1rem;
+  background: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment {
+  margin-top: 1rem;
+}
+
+.commentMeta {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.commentText {
+  margin: 0.5rem 0;
+}
+
+.commentActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.commentActions button {
+  background: none;
+  border: none;
+  color: #0079d3;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
