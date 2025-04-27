@@ -1,50 +1,13 @@
-import Page from "./ui-components/page";
+import { Navigate, Route, Routes } from "react-router";
 
-import styles from "./app.module.css";
+import HomePage from "./pages/home";
 
 function App() {
   return (
-    <Page>
-      <div className={styles.container}>
-        <main>
-          <div className={styles.post}>
-            <div className={styles.votes}>
-              <button>upvote</button>
-              <span>235</span>
-              <button>downvote</button>
-            </div>
-            <div className={styles.postContent}>
-              <h2>Title of Post</h2>
-              <p className={styles.meta}>
-                Posted by u/username 3h ago in r/subredditname
-              </p>
-              <p className={styles.excerpt}>
-                Here's the first few lines of the post to preview...
-              </p>
-              <div className={styles.postActions}>
-                <span>53 comments</span>
-                <span>Share</span>
-                <span>Save</span>
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <aside>
-          {/* <div className={styles.sidebarBox}>
-            <h3>About Community</h3>
-            <p>Description of the subreddit or trending topics.</p>
-          </div> */}
-          <div className={styles.sidebarBox}>
-            <h3>Trending Posts</h3>
-            <ul>
-              <li>Post 1</li>
-              <li>Post 2</li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </Page>
+    <Routes>
+      <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/home" element={<HomePage />} />
+    </Routes>
   );
 }
 
