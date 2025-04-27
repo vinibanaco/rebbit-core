@@ -1,0 +1,72 @@
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.post {
+  background: white;
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.votes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.votes button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.postContent h2 {
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.excerpt {
+  margin-bottom: 0.5rem;
+}
+
+.postActions span {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.sidebarBox {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.sidebarBox h3 {
+  margin-bottom: 0.5rem;
+}
+
+.sidebarBox ul {
+  list-style: none;
+}
+
+.sidebarBox li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #0079d3;
+}
